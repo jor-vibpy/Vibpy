@@ -231,8 +231,10 @@ class MDOF:
         sysn = odeint(sys, CI, t)
         self.resp = sysn.T
         
-        self.wn = np.unique(np.array([np.absolute(eigvals(self.A())), np.absolute(eigvals(self.A()))]))
-        self.wd = np.unique(np.absolute((np.array([np.imag(eigvals(self.A())), np.imag(eigvals(self.A()))]))))
+        self.wn = np.unique(np.absolute(eigvals(self.A())))[:self.n]
+        
+        self.wd = np.unique(np.absolute(np.imag(eigvals(self.A()))))[:self.n]
+        
         self.Damping_Ratio = np.sqrt(-(((self.wd**2)/((self.wn**2)))) + np.repeat(1, len(self.M)))
         
         return sysn
