@@ -13,6 +13,12 @@ This package allows the user to create Multi Degree of Freedom systems, obtainin
 
 ### Examples
 
+To import the package, use the following code.
+
+```
+  import Vibpy.Vibpy_2 as vp
+```
+
 An example can be viwed in the code below.
 
 ```
@@ -25,7 +31,7 @@ An example can be viwed in the code below.
   F = np.array([1,2])
   w = np.array([3,3])
   
-  sys = MDOF(M, K, C)
+  sys = vp.MDOF(M, K, C)
   sysn = sys.MDOF(CI, t, F, w, 'cos')
   
   sys.plot_responses(t)
