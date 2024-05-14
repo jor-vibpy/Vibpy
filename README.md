@@ -16,7 +16,7 @@ This package allows the user to create Multi Degree of Freedom systems, obtainin
 To import the package, use the following code.
 
 ```
-  import Vibpy.Vibpy_2 as vp
+  import Vibpy as vp
 ```
 
 An example can be viwed in the code below.
