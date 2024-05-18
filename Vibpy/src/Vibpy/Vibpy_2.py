@@ -116,6 +116,7 @@ class DOF1:
         
         else:
             self.r = w/self.wn
+            
         if F0==None:
 
             if self.z<1:
@@ -139,7 +140,7 @@ class DOF1:
 
                 x = (A1*np.exp(S1*t)) + (B1*np.exp(S2*t))
 
-            return x
+            self.y = [x, t]
 
         else:
             
@@ -154,8 +155,6 @@ class DOF1:
 
             y = odeint(dof1, CI, t)
             self.y = y.T
-
-            return y
         
     def plot_responses(self, t):
         plt.style.use('seaborn')
