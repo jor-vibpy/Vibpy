@@ -6,6 +6,11 @@ To install Vibpy, run the line below in a Terminal.
 pip install -i https://test.pypi.org/simple/ Vibpy
 ```
 
+To upgrade Vibpy, run the line below in a Terminal.
+
+```
+pip install -i https://test.pypi.org/simple/ Vibpy --upgrade
+```
 
 ## Utilizing the Package
 

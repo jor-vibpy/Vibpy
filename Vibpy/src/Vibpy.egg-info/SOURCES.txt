@@ -7,4 +7,5 @@ src/Vibpy/__init__.py
 src/Vibpy.egg-info/PKG-INFO
 src/Vibpy.egg-info/SOURCES.txt
 src/Vibpy.egg-info/dependency_links.txt
+src/Vibpy.egg-info/requires.txt
 src/Vibpy.egg-info/top_level.txt

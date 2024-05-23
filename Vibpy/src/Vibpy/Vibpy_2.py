@@ -109,7 +109,11 @@ class DOF1:
         self.wn = np.sqrt(self.K/self.M)
         self.cc = 2*np.sqrt(self.K*self.M)
         self.z = self.C/self.cc
-        self.wd = self.wn*(np.sqrt(1-(self.z**2)))
+
+        if self.z > 1:
+            self.wd = self.wn*(np.sqrt((1-(self.z**2))+0j))
+        else:
+            self.wd = self.wn*(np.sqrt(1-(self.z**2)))
         
         if w==None:
             self.r = None
