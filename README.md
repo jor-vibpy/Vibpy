@@ -3,7 +3,7 @@
 To install Vibpy, run the line below in a Terminal.
 
 ```
-pip install -i https://test.pypi.org/simple/ Vibpy
+pip install --index-url https://test.pypi.org/simple/ --extra-index-url https://pypi.org/simple/ Vibpy
 ```
 
 To upgrade Vibpy, run the line below in a Terminal.

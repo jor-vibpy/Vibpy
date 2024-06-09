@@ -161,7 +161,6 @@ class DOF1:
             self.y = y.T
         
     def plot_responses(self, t):
-        plt.style.use('seaborn')
         plt.title('Displacement Response')
         plt.plot(t, self.y[0])
         plt.xlabel('Time (s)')
@@ -254,8 +253,6 @@ class MDOF:
         f, ax = plt.subplots(self.n, 1, sharex=True)
         f.figure.set_figwidth(10)
         f.set_figheight(8)
-                
-        plt.style.use('seaborn')
         
         f.suptitle('Displacement Response')
         ax[self.n-1].set_xlabel('Time (s)')
