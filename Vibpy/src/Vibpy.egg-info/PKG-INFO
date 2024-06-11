@@ -1,6 +1,6 @@
 Metadata-Version: 2.1
 Name: Vibpy
-Version: 0.0.13
+Version: 0.0.14
 Summary: Solve vibration systems for 1GDL and MGDL, returning frequency characteristics, damping information and system responses plots.
 Home-page: https://github.com/jor-vibpy/Vibpy
 Author: Jorge Fogaça

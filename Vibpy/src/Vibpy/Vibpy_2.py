@@ -81,7 +81,7 @@ class DOF1:
     
     def DOF1(self, CI, t, F0=None, w=None):
 
-        """ Response of a 1 DOF Free Vibration System
+        """ Response of a 1 DOF Free and Forced Vibration System
         
             Parameters
             ------------------------------------------
@@ -268,7 +268,7 @@ class MDOF:
             ax[i].set_ylim(-abs(desloc.min()) - (abs(desloc.min())/10), abs(desloc.max())+(abs(desloc.max())/10))
             plt.tight_layout()
             
-        return plt.show
+        return plt.show()
 
 
 
